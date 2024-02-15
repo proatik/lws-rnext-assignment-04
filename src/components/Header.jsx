@@ -10,6 +10,7 @@ import { NewsContext } from "../contexts";
 
 // utility functions.
 import debounce from "../utils/debounce";
+import currentDate from "../utils/currentDate";
 
 // navigation items.
 const categories = [
@@ -82,7 +83,7 @@ const Header = () => {
       <div className="container flex flex-wrap items-center justify-between gap-6 mx-auto">
         <div className="flex items-center space-x-4">
           <img src={GlobeIcon} alt="Glove Icon" />
-          <span>Thursday, February 25, 2021</span>
+          <span>{currentDate()}</span>
         </div>
 
         <a href="/">
